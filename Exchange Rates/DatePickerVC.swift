@@ -27,7 +27,6 @@ class DatePickerVC: UIViewController {
         dateFormatter.dateFormat = "dd.MM.yyyy"
         self.datePicker.calendar = Calendar.current
         self.datePicker.timeZone = TimeZone(secondsFromGMT: 2)
-    
     }
     
     // MARK: - Action
@@ -50,5 +49,4 @@ class DatePickerVC: UIViewController {
         let date = sender.date
         print(dateFormatter.string(from: date))
     }
-    
 }

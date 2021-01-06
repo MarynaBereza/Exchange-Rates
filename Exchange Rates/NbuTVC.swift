@@ -25,7 +25,6 @@ class NbuTVC: UITableViewController {
             
             weakSelf.view.addSubview(weakSelf.activityIndicator)
             weakSelf.activityIndicator.center = weakSelf.view.center
-//            weakSelf.activityIndicator.color = UIColor.init(displayP3Red: 67.0/255.0, green: 165.0/255.0, blue: 79.0/255.0, alpha: 1.0)
             weakSelf.activityIndicator.startAnimating()
             
             weakSelf.nbuRatesArray = array
@@ -34,28 +33,6 @@ class NbuTVC: UITableViewController {
         }
         tableView.register(UINib(nibName: "NbuTVCell", bundle: nil), forCellReuseIdentifier: "NbuTVCell")
     }
-    
-    
-//    // MARK: - Method get data fron Server
-//
-//    func getRatesFromServerWithDate(date: Date) {
-//
-//        Repository.getNbuCurrencyRatesDataBy(date: date) { [weak self](nbuRatesArray) in
-//            guard let weakSelf = self else {
-//                return
-//            }
-//            weakSelf.view.addSubview(weakSelf.activityIndicator)
-//            weakSelf.activityIndicator.center = weakSelf.view.center
-//            weakSelf.activityIndicator.color = UIColor.init(displayP3Red: 67.0/255.0, green: 165.0/255.0, blue: 79.0/255.0, alpha: 1.0)
-//            weakSelf.activityIndicator.startAnimating()
-//            weakSelf.nbuRatesArray = nbuRatesArray
-//
-//            weakSelf.tableView.reloadData()
-//            weakSelf.activityIndicator.stopAnimating()
-//        }
-//        tableView.register(UINib(nibName: "NbuTVCell", bundle: nil), forCellReuseIdentifier: "NbuTVCell")
-//    }
-    
     
     // MARK: - Table view data source
     

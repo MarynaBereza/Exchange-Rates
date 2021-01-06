@@ -50,7 +50,6 @@ class PrivatAPIServerManager {
                 }
             }
         }
-        
         task.resume()
     }
 }

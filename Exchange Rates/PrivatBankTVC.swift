@@ -38,8 +38,7 @@ class PrivatBankTVC: UITableViewController {
             weakSelf.activityIndicator.color = UIColor.init(displayP3Red: 67.0/255.0, green: 165.0/255.0, blue: 79.0/255.0, alpha: 1.0)
             weakSelf.activityIndicator.center = weakSelf.view.center
             weakSelf.activityIndicator.startAnimating()
-            
-
+        
             weakSelf.privatRatesArray = array
             weakSelf.tableView.reloadData()
             weakSelf.activityIndicator.stopAnimating()
@@ -98,14 +97,11 @@ extension PrivatBankTVC: DateRefreshHandler {
             guard let weakSelf = self else {
                 return
             }
-            
             weakSelf.privatRatesArray = array
             weakSelf.tableView.reloadData()
             weakSelf.activityIndicator.stopAnimating()
         })
-        
         self.tableView.reloadData()
-        
     }
 }
 
